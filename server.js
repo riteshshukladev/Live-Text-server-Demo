@@ -16,7 +16,7 @@ const app = express();
 const server = createServer(app);
 const io = new SocketIOServer(server, {
   cors: {
-    origin: "*" || "https://Live-Text.onrender.com",
+    origin: "*",
     methods: ["GET", "POST"],
   },
 });
